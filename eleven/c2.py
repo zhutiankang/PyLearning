@@ -32,3 +32,4 @@ a = 3
 #     pass
 
 print(VIP(a))
+print(a==VIP.YELLOW)
