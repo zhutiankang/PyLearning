@@ -5,7 +5,7 @@ a = 'abc,acc,adc,aec,afc,ahc'
 
 r = re.findall('a[cf]c',a)
 print(r)
-# 普通字符与元字符结合  普通字符a c 用来定界的
+# 普通字符与元字符结合[cf]corf  普通字符a c 用来定界的
 
 r = re.findall('a[^cf]c',a) #取反
 print(r)
