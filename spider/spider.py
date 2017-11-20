@@ -61,10 +61,12 @@ class Spider():
 
     # 排序种子 key
     def __sort_seed(self,anchor):
-        r = re.findall('\d*',anchor['number'])
-        number = float(r[0])
+        r = re.findall('\d+',anchor['number'])
+        number = int(r[0])
         if '万' in anchor['number']:
             number *= 10000
+            if len(r) == 2:
+                number += int(r[1]) * 1000
         return number
 
     def __show(self,anchors):
