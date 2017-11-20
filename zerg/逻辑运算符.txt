@@ -1,0 +1,20 @@
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> bin(2)
+'0b10'
+>>> bin(3)
+'0b11'
+>>> int(True)
+1
+>>> = 为赋值运算符
+SyntaxError: invalid syntax
+>>> int('1')
+1
+>>> a=1
+>>> b=2
+>>> c=3
+>>> a or b and c
+1
+>>> and 优先级大于 or
+SyntaxError: invalid syntax
+>>> 有谁决定返回谁，and堆箱子 后进先出，先拿上面的等等，还是有谁决定好
