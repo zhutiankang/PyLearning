@@ -1,3 +1,8 @@
+'''
+如何为元组中的每个元素命名，提高程序可读性
+1. 定义枚举 OR 常量值
+2. 使用nametuple替代内置tuple
+'''
 from enum import Enum
 class Student(Enum):
     NAME = 0
