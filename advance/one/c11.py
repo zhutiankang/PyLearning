@@ -23,7 +23,6 @@ while True:
         k = int(line)
         history.append(k)
         # pickle.dump(history,open('history'))
-        pickle.dump
         if guess(k):
             break
     elif line == 'history' or line == 'h':
