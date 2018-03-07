@@ -2,11 +2,11 @@
 class Student:
     name = 'A' # 类变量 用上Student.name 或者self.__class__.name
     age = 0
-    # 类变量，实例变量
+    # 类变量
     def __init__(self, name): #def __init__(this, name, age):可以self变成this，不过推荐叫self
         # this
         # 显胜于隐
-        self.name = name
+        self.name = name  #实例变量
         # print(name) 访问实例变量，最好用上self前缀
         # print(age)  name age 都是形参
 

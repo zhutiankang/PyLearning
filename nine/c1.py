@@ -6,10 +6,10 @@
 class Student:
     name = 'A' # 类变量
     age = 0
-    # 类变量，实例变量
+    # 类变量
     def __init__(self, name, age):#return None
         # 构造函数
-        # 初始化对象的属性 实例变量
+        # 初始化对象的属性 实例变量 或者新增实例属性
         self.name = name
         self.age = age
         # name = name 这样赋值不起作用，name是局部变量 而不是实例变量，所以对象实例没有值
