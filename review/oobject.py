@@ -5,7 +5,7 @@ class CocaCola:
 
 coke_for_China = CocaCola()
 
-# 外部新增实例变量 实例属性
+# 外部新增实例变量  只是增加该对象的实例属性  新对象没有local_logo
 coke_for_China.local_logo = '可口可乐'
 print(coke_for_China.local_logo)
 '''
@@ -16,7 +16,7 @@ class CocaCola:
     formula = ['caffeine','sugar','water','soda']
 
     def __init__(self,name):
-        # 内部新增实例变量
+        # 内部新增实例变量  增加所有对象的实例属性
         self.local_logo = name
         
 coke_for_China = CocaCola('可口可乐')
@@ -62,13 +62,19 @@ coke_a = CaffeineFree('Cocacola-FREE')
 coke_a.drink()
 '''
 # 类修改类变量是全局的，对象修改类变量是局部的
+# class TestA:
+#     attr = 1
+#     def __init__(self):
+#         self.attr = 66
+#
+# obj1 = TestA()
+# obj2 = TestA()
+#
+# print(TestA.__dict__)
+# print(obj2.__dict__)
 class TestA:
     attr = 1
-    def __init__(self):
-        self.attr = 66
-
-obj1 = TestA()
-obj2 = TestA()
-
-print(TestA.__dict__)
-print(obj2.__dict__)
+obj_a = TestA()
+obj_b = TestA()
+obj_a.attr = 42
+print(obj_b.attr)
